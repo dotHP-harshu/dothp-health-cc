@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us</title>
+    <link rel="stylesheet" href="../static/css/output.css" />
+  </head>
+
+  <body class="bg-bg-dark text-text-dark">
+    <!-- --------------------------------- Header ---------------------------------  -->
+    <header>
+      <nav class="w-full flex justify-between items-center py-4 px-4">
+        <div class="logo">
+          <a
+            href="/"
+            class="text-2xl font-semibold text-primary-dark font-logo"
+          >
+            DotHP</a
+          >
+        </div>
+        <div class="icons hidden max-xs:inline-block relative">
+          <div
+            id="icons"
+            class="h-10 w-10 flex justify-center items-center p-2"
+          >
+            <img
+              src="../static/images/hamburger.svg"
+              alt="hamburger"
+              id="hamburger"
+              class="w-full h-auto cursor-pointer"
+            />
+            <img
+              src="../static/images/close.svg"
+              alt="hamburger"
+              id="close"
+              class="w-full h-auto cursor-pointer hidden"
+            />
+          </div>
+          <!-- mobile menu  -->
+          <ul
+            id="mobile-menu"
+            class="bg-surface-dark absolute top-full right-0 w-40 h-fit hidden flex-col gap-4 p-2 rounded-lg border-2 border-border-dark z-30"
+          >
+            <li><a href="/">Home</a></li>
+            <li><a href="/contact">Contact us</a></li>
+            <li><a href="/about"> About us </a></li>
+            <li><a href="/developer">Developer</a></li>
+            <li><a href="/blog">Blog</a></li>
+          </ul>
+          <!-- mobile menu  -->
+        </div>
+        <ul class="flex gap-4 justify-center items-center max-xs:hidden">
+          <li class="text-base px-2"><a href="/">Home</a></li>
+          <li class="text-base px-2">
+            <a href="/contact">Contact us</a>
+          </li>
+          <li class="text-base px-2"><a href="/about">About us</a></li>
+          <li class="text-base px-2"><a href="/developer">Developer</a></li>
+          <li class="text-base px-2"><a href="/blog">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- --------------------------------- Header ---------------------------------  -->
+    <!-- --------------------------------- Main --------------------------------- -->
+    <section class="lg-px-20 max-sm:px-4 py-10">
+      <div class="flex flex-col justify-center items-center gap-4 mb-20">
+        <h1 class="text-center text-3xl">About us</h1>
+        <p class="text-base text-text-muted-dark text-center max-xs:text-sm">
+          Welcome to medical health care center .Where health meets technology
+          for a brighter,healthier future
+        </p>
+      </div>
+      <!-- ---------------------------------------------------- grid section ------------------------------------------ -->
+      <div
+        class="w-full grid lg:grid-cols-4 sm:grid-cols-2 max-sm:grid-cols-1 place-items-center gap-10 sm:px-20 max-sm:px-4 max-xs:px-0 py-10 justify-center"
+      >
+        <div
+          class="card relative w-68 h-72 bg-surface-dark rounded-lg shadow-lg border-2 border-border-dark flex justify-center items-center group overflow-hidden hover:shadow-lg hover:shadow-border-dark"
+        >
+          <h4 class="text-2xl text-center font-bold font-mono p-4">
+            Our vision
+          </h4>
+          <p
+            class="group-hover:top-0 text-base p-2 w-full h-full absolute top-full left-0 text-center flex justify-center items-center bg-red-300 text-red-500 rounded-lg border-2 border-red-500 transition-all duration-500"
+          >
+            We envision a world where access to healthcare information is not
+            just a luxury but a fundamental rigth. Our journey begin with a
+            simple yet powerfull ideato empower individuals with the knowledge
+            and tools they need to take control of their health.
+          </p>
+        </div>
+        <div
+          class="card relative w-68 h-72 bg-surface-dark rounded-lg shadow-lg border-2 border-border-dark flex justify-center items-center group overflow-hidden hover:shadow-lg hover:shadow-border-dark"
+        >
+          <h4 class="text-2xl text-center font-bold font-mono">Who we are</h4>
+          <p
+            class="group-hover:top-0 text-base p-2 w-full h-full absolute top-full left-0 text-center flex justify-center items-center bg-orange-300 text-orange-500 rounded-lg border-2 border-orange-500 transition-all duration-500"
+          >
+            We're passionate team of healthcare professionals,data scientists
+            and technology enthugiast who share a common goal : to make
+            helathcarec accessible , understandable and personlized for you.
+          </p>
+        </div>
+        <div
+          class="card relative w-68 h-72 bg-surface-dark rounded-lg shadow-lg border-2 border-border-dark flex justify-center items-center group overflow-hidden hover:shadow-lg hover:shadow-border-dark"
+        >
+          <h4 class="text-2xl text-center font-bold font-mono">Our Mission</h4>
+          <p
+            class="group-hover:top-0 text-base p-2 w-full h-full absolute top-full left-0 text-center flex justify-center items-center bg-teal-200 text-teal-700 rounded-lg border-2 border-teal-700 transition-all duration-500"
+          >
+            Our mission is to provide you with a seamless and intuitive platform
+            that leverages AI and ML to help identify health care concerns and
+            enhance your health literacy
+          </p>
+        </div>
+        <div
+          class="card relative w-68 h-72 bg-surface-dark rounded-lg shadow-lg border-2 border-border-dark flex justify-center items-center group overflow-hidden hover:shadow-lg hover:shadow-border-dark"
+        >
+          <h4 class="text-2xl text-center font-bold font-mono">How we do it</h4>
+          <p
+            class="group-hover:top-0 text-base p-2 w-full h-full absolute top-full left-0 text-center flex justify-center items-center bg-cyan-200 text-cyan-700 rounded-lg border-2 border-cyan-700 transition-all duration-500"
+          >
+            Our platform utilizes a robust machine learning model trained on a
+            vast dataset of symptoms and deseases . By inputting your symptoms ,
+            our system generates accurate prediction about potential illness,
+            allowing you to make inform decisions about your health
+          </p>
+        </div>
+        <!-- <div
+          class="card relative w-68 h-72 bg-surface-dark rounded-lg shadow-lg border-2 border-border-dark flex justify-center items-center group overflow-hidden hover:shadow-lg hover:shadow-border-dark"
+        >
+          <h4 class="text-2xl text-center font-bold font-mono">
+            Your well-being,our priority
+          </h4>
+          <p
+            class="group-hover:top-0 text-base p-2 w-full h-full absolute top-full left-0 text-center flex justify-center items-center bg-fuchsia-300 text-fuchsia-500 rounded-lg border-2 border-fuchsia-500 transition-all duration-500"
+          >
+            Your health is our top priority. We understand that navigating the
+            complexities of healthcare can be dounting . thta;s why we have gone
+            the extre mile to provide not ecommended
+          </p>
+        </div> -->
+      </div>
+      <!-- ---------------------------------------------------- grid section ------------------------------------------ -->
+    </section>
+    <!-- --------------------------------- Main --------------------------------- -->
+    <footer class="w-full mt-10 text-sm text-center py-6">
+      Made with ❤️ by DotHP
+    </footer>
+
+    <script src="../static/javascript/script.js"></script>
+  </body>
+</html>

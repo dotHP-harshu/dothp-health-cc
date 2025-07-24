@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <link rel="stylesheet" href="../static/css/output.css" />
+  </head>
+  <body class="bg-bg-dark text-text-dark">
+      <!-- --------------------------------- Header ---------------------------------  -->
+       <header>
+      <nav class="w-full flex justify-between items-center py-4 px-4">
+        <div class="logo">
+          <a
+            href="/"
+            class="text-2xl font-semibold text-primary-dark font-logo"
+          >
+            DotHP</a
+          >
+        </div>
+        <div class="icons hidden max-xs:inline-block relative">
+          <div
+            id="icons"
+            class="h-10 w-10 flex justify-center items-center p-2"
+          >
+            <img
+              src="../static/images/hamburger.svg"
+              alt="hamburger"
+              id="hamburger"
+              class="w-full h-auto cursor-pointer"
+            />
+            <img
+              src="../static/images/close.svg"
+              alt="hamburger"
+              id="close"
+              class="w-full h-auto cursor-pointer hidden"
+            />
+          </div>
+          <!-- mobile menu  -->
+          <ul
+            id="mobile-menu"
+            class="bg-surface-dark absolute top-full right-0 w-40 h-fit hidden flex-col gap-4 p-2 rounded-lg border-2 border-border-dark z-30"
+          >
+            <li><a href="/">Home</a></li>
+            <li><a href="/contact">Contact us</a></li>
+            <li><a href="/about"> About us </a></li>
+            <li><a href="/developer">Developer</a></li>
+            <li><a href="/blog">Blog</a></li>
+          </ul>
+          <!-- mobile menu  -->
+        </div>
+        <ul class="flex gap-4 justify-center items-center max-xs:hidden">
+          <li class="text-base px-2"><a href="/">Home</a></li>
+          <li class="text-base px-2">
+            <a href="/contact">Contact us</a>
+          </li>
+          <li class="text-base px-2"><a href="/about">About us</a></li>
+          <li class="text-base px-2"><a href="/developer">Developer</a></li>
+          <li class="text-base px-2"><a href="/blog">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- --------------------------------- Header ---------------------------------  -->
+     <!-- --------------------------------- Main --------------------------------- -->
+    <section class="lg-px-20 max-sm:px-4 py-10 ">
+      <div class="flex flex-col justify-center items-center gap-4 mb-20">
+        <h1 class="text-center text-3xl ">Contact us</h1>
+        <p class="text-base text-text-muted-dark text-center ">
+          Contact Us Have questions or need assistance ? We're here to help you
+        </p>
+      </div>
+      <!-- --------------------------------- get in touch ------------------------------------------ -->
+      <div
+        id="getInTouch"
+        class="w-full grid lg:grid-cols-2 max-sm:grid-cols-1 px-6 py-4 max-xs:px-0 "
+      >
+        <div class="left lg:px-10 sm:px-6 max-sm:px-4 py-8 max-xs:py-2 flex flex-col justify-center items-start gap-4">
+          <h4 class="text-4xl font-semibold max-xs:text-xl">Get in Touch</h4>
+          <p class="text-lg text-text-muted-dark mt-4 max-xs:text-sm max-xs:mt-0">
+            Feel free to reach out to us via email or through the contact form
+            below. We value your feedback and are committed to providing you
+            with the best possible experience
+          </p>
+        </div>
+
+        <div class="right max-lg:px-10 sm:px-6 max-sm:px-4 py-8 max-xs:py-2">
+          <form
+            class="flex flex-col gap-4 bg-gradient-to-bl from-top-surface-dark via-surface-dark max-lg:px-10 sm:px-6 max-sm:px-4 py-8 rounded-lg "
+          >
+            <div class="flex flex-col gap-1">
+              <label for="name" class="text-lg max-xs:text-base">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="p-2 bg-top-surface-dark rounded-md outline-none max-sm:text-sm border-2 border-border-dark"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="flex flex-col gap-1">
+                <label for="feedback" class="text-lg max-xs:text-base">Feedback</label>
+                <textarea id="feedback" class="p-2 bg-top-surface-dark rounded-md outline-none resize-none max-sm:text-sm border-2 border-border-dark" placeholder="Enter your feedback" rows="5"></textarea>
+            </div>
+            <div class="flex flex-col gap-2">
+                <button class="w-fit text-lg max-xs:text-base outline-none border-none bg-bg-dark rounded-md px-4 py-2 hover:shadow-xs hover:shadow-primary-dark transition-all duration-300">Submit </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- --------------------------------- get in touch ------------------------------------------ -->
+
+      <!-- --------------------------------- stay connected --------------------------------- -->
+       <div
+        id="stayConnected"
+        class="w-full grid lg:grid-cols-2 px-6 py-4 max-xs:px-0 max-sm:flex max-sm:flex-col-reverse "
+      >
+        <div class="left max-lg:px-10 sm:px-6 max-sm:px-4 py-8 max-xs:py-2">
+          <div class="container bg-gradient-to-br from-top-surface-dark via-surface-dark rounded-lg p-4 grid grid-cols-2 gap-4 place-items-center max-xs:grid-cols-1">
+            <div class="w-36 h-36  border-2 border-border-dark  bg-bg-dark rounded-full flex justify-center items-center relative group hover:shadow-xs hover:shadow-primary-dark cursor-cell">
+              <img src="../static/images/contact.svg" alt="contact" class="w-12 h-auto object-center fill-text-dark">
+              <span class="w-full h-full rounded-full bg-bg-dark hover:bg-gradient-to-tl hover:from-bg-dark hover:via-surface-dark absolute top-0 left-0 flex flex-col justify-center items-center gap-1 opacity-0 group-hover:opacity-100  transition-opacity duration-300 p-2">
+                <h3 class="text-lg text-center capitalize tracking-tighter">Contact support</h3>
+                <p class="text-sm text-text-muted-dark text-center">24x7 hours and 365 days</p>
+              </span>
+            </div>
+            <div class="w-36 h-36  border-2 border-border-dark  bg-bg-dark rounded-full flex justify-center items-center relative group hover:shadow-xs hover:shadow-primary-dark cursor-cell ">
+              <img src="../static/images/call.svg" alt="contact" class="w-12 h-auto object-center fill-text-dark">
+              <span class="w-full h-full rounded-full bg-bg-dark hover:bg-gradient-to-tl hover:from-bg-dark hover:via-surface-dark absolute top-0 left-0 flex flex-col justify-center items-center gap-1 opacity-0 group-hover:opacity-100  transition-opacity duration-300 p-2">
+                <h3 class="text-lg text-center capitalize tracking-tighter">Contact</h3>
+                <p class="text-sm text-text-muted-dark text-center">+91 69684 14412 <br>+91 23652 54256</p>
+              </span>
+            </div>
+            <div class="w-36 h-36  border-2 border-border-dark  bg-bg-dark rounded-full flex justify-center items-center relative group hover:shadow-xs hover:shadow-primary-dark cursor-cell ">
+              <img src="../static/images/email.svg" alt="contact" class="w-12 h-auto object-center fill-text-dark">
+              <span class="w-full h-full rounded-full bg-bg-dark hover:bg-gradient-to-tl hover:from-bg-dark hover:via-surface-dark absolute top-0 left-0 flex flex-col justify-center items-center gap-1 opacity-0 group-hover:opacity-100  transition-opacity duration-300 p-2">
+                <h3 class="text-lg text-center capitalize tracking-tighter">Email</h3>
+                <p class="text-sm text-text-muted-dark text-center">dothp@gmail.com</p>
+              </span>
+            </div>
+            <div class="w-36 h-36  border-2 border-border-dark  bg-bg-dark rounded-full flex justify-center items-center relative group hover:shadow-xs hover:shadow-primary-dark cursor-cell ">
+              <img src="../static/images/location.svg" alt="contact" class="w-12 h-auto object-center fill-text-dark">
+              <span class="w-full h-full rounded-full bg-bg-dark hover:bg-gradient-to-tl hover:from-bg-dark hover:via-surface-dark absolute top-0 left-0 flex flex-col justify-center items-center gap-1 opacity-0 group-hover:opacity-100  transition-opacity duration-300 p-2">
+                <h3 class="text-lg text-center capitalize tracking-tighter">location</h3>
+                <p class="text-sm text-text-muted-dark text-center">35/4, Second floor, Anandpuram, kanpur</p>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="right lg:px-10 sm:px-6 max-sm:px-4 py-8 flex flex-col justify-center items-start gap-4 max-xs:py-2">
+          <h4 class="text-4xl font-semibold max-xs:text-xl">Stay Connected</h4>
+          <p class="text-lg text-text-muted-dark mt-4 max-xs:text-sm" >
+            Stay up to date with the latest news,updates and health tips by following us on social media . Connect with us on Facebook or instgram to join our growing community.
+          </p>
+        </div>
+      </div>
+      <!-- --------------------------------- stay connected --------------------------------- -->
+    </section>
+     <!-- --------------------------------- Main --------------------------------- -->
+    <footer class="w-full mt-10 text-sm text-center py-6">
+      Made with ❤️ by DotHP
+    </footer>
+
+     <script src="../static/javascript/script.js"></script>
+      
+  </body>
+</html>
