@@ -1,211 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dothp</title>
-    <link rel="stylesheet" href="../static/css/output.css" />
-  </head>
-  <body class="bg-bg-dark text-text-dark">
-    <!-- --------------------------------- Header ---------------------------------  -->
-    <header>
-      <nav class="w-full flex justify-between items-center py-4 px-4">
-        <div class="logo">
-          <a
-            href="/"
-            class="text-2xl font-semibold text-primary-dark font-logo"
-          >
-            DotHP</a
-          >
-        </div>
-        <div class="icons hidden max-xs:inline-block relative">
-          <div
-            id="icons"
-            class="h-10 w-10 flex justify-center items-center p-2"
-          >
-            <img
-              src="../static/images/hamburger.svg"
-              alt="hamburger"
-              id="hamburger"
-              class="w-full h-auto cursor-pointer"
-            />
-            <img
-              src="../static/images/close.svg"
-              alt="hamburger"
-              id="close"
-              class="w-full h-auto cursor-pointer hidden"
-            />
-          </div>
-          <!-- mobile menu  -->
-          <ul
-            id="mobile-menu"
-            class="bg-surface-dark absolute top-full right-0 w-40 h-fit hidden flex-col gap-4 p-2 rounded-lg border-2 border-border-dark z-30"
-          >
-            <li><a href="/">Home</a></li>
-            <li><a href="/contact">Contact us</a></li>
-            <li><a href="/about"> About us </a></li>
-            <li><a href="/developer">Developer</a></li>
-            <li><a href="/blog">Blog</a></li>
-          </ul>
-          <!-- mobile menu  -->
-        </div>
-        <ul class="flex gap-4 justify-center items-center max-xs:hidden">
-          <li class="text-base px-2"><a href="/">Home</a></li>
-          <li class="text-base px-2">
-            <a href="/contact">Contact us</a>
-          </li>
-          <li class="text-base px-2"><a href="/about">About us</a></li>
-          <li class="text-base px-2"><a href="/developer">Developer</a></li>
-          <li class="text-base px-2"><a href="/blog">Blog</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- --------------------------------- Header ---------------------------------  -->
-    <!-- --------------------------------- Main --------------------------------- -->
 
-    <div class="w-full py-6">
-      <h1 class="text-3xl font-mono font-semibold capitalize text-center">
-        health care center
-      </h1>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dothp</title>
+  <link rel="stylesheet" href="../static/css/output.css" />
+</head>
 
-    <!-- --------------------------------- Input section --------------------------------- -->
-    <section
-      id="user-input"
-      class="lg:px-40 sm:px-20 max-sm:px-10 max-xs:px-4 py-6"
-    >
-      <!-- input portion  -->
-      <div
-        class="w-fit p-4 rounded-md bg-gradient-to-bl from-surface-dark via-top-surface-dark max-xs:w-full"
-      >
-        <p class="text-sm text-text-muted-dark mb-4">
-          Write symptoms separated by comma:
-        </p>
-        <div class="w-full flex gap-4 max-xs:flex-col max-sm:items-start relative">
-          <form action="/predict" method="post">
-          <input
-            required
-            id="input-box"
-            placeholder="Write here..."
-            type="text"
-            name="symptoms"
-            class="min-w-80 px-4 py-2 rounded-sm border-2 border-border-dark outline-none bg-surface-dark max-xs:min-w-auto max-xs:w-full"
-          />
-          <button
-            id="add-button"
-            class="text-base px-4 py-2 rounded-sm bg-bg-dark capitalize cursor-pointer hover:shadow-2xs hover:shadow-primary-dark transition-shadow duration-300"
-          >
-            submit
-          </button>
-          </form>
-        </div>
-
-        </div>
+<body class="bg-bg-dark text-text-dark">
+  <!-- --------------------------------- Header ---------------------------------  -->
+  <header>
+    <nav class="w-full flex justify-between items-center py-4 px-4">
+      <div class="logo">
+        <a href="/" class="text-2xl font-semibold text-primary-dark font-logo">
+          DotHP</a>
       </div>
-      <!-- input portion  -->
+      <div class="icons hidden max-xs:inline-block relative">
+        <div id="icons" class="h-10 w-10 flex justify-center items-center p-2">
+          <img src="../static/images/hamburger.svg" alt="hamburger" id="hamburger"
+            class="w-full h-auto cursor-pointer" />
+          <img src="../static/images/close.svg" alt="hamburger" id="close"
+            class="w-full h-auto cursor-pointer hidden" />
+        </div>
+        <!-- mobile menu  -->
+        <ul id="mobile-menu"
+          class="bg-surface-dark absolute top-full right-0 w-40 h-fit hidden flex-col gap-4 p-2 rounded-lg border-2 border-border-dark z-30">
+          <li><a href="/">Home</a></li>
+          <li><a href="/contact">Contact us</a></li>
+          <li><a href="/about"> About us </a></li>
+          <li><a href="/developer">Developer</a></li>
+          <li><a href="/blog">Blog</a></li>
+        </ul>
+        <!-- mobile menu  -->
+      </div>
+      <ul class="flex gap-4 justify-center items-center max-xs:hidden">
+        <li class="text-base px-2"><a href="/">Home</a></li>
+        <li class="text-base px-2">
+          <a href="/contact">Contact us</a>
+        </li>
+        <li class="text-base px-2"><a href="/about">About us</a></li>
+        <li class="text-base px-2"><a href="/developer">Developer</a></li>
+        <li class="text-base px-2"><a href="/blog">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- --------------------------------- Header ---------------------------------  -->
+  <!-- --------------------------------- Main --------------------------------- -->
+
+  <div class="w-full py-6">
+    <h1 class="text-3xl font-mono font-semibold capitalize text-center">
+      health care center
+    </h1>
+  </div>
+
+  <!-- --------------------------------- Input section --------------------------------- -->
+  <section id="user-input" class="lg:px-40 sm:px-20 max-sm:px-10 max-xs:px-4 py-6">
+    <!-- input portion  -->
+    <div class="w-fit p-4 rounded-md bg-gradient-to-bl from-surface-dark via-top-surface-dark max-xs:w-full">
+      <p class="text-sm text-text-muted-dark mb-4">Add symptoms from here</p>
+      <div class="relative w-fit">
+        <input autofocus required autocomplete="additional-name" id="input-box" placeholder="Write here..." type="text"
+          class="min-w-80 px-4 py-2 rounded-sm border-2 border-border-dark outline-none bg-surface-dark max-xs:min-w-auto max-xs:w-full" />
+
+        <div id="suggestion-container"
+          class="absolute top-full left-0 w-full flex-col border-2 border-surface-dark max-h-72 hidden"></div>
+      </div>
+    </div>
+    <!-- input portion  -->
+
+    <!-- submit portion  -->
+    <form id="form" action="/predict" method="post"
+      class="bg-gradient-to-br from-top-surface-dark via-surface-dark border-2 border-border-dark mt-4 rounded-md py-2 px-4">
       <!-- symptom collection  -->
-      <!-- <ds -->
+      <div id="symptom-container" class="w-full flex flex-wrap gap-4 py-4">
+        <p class="text-sm text-text-muted-dark">Symptoms will be here..</p>
+      </div>
+
+      <input type="text" id="real-input" class="hidden" name="symptoms" value="" />
       <!-- symptom collection  -->
-      <!-- submit portion  -->
-      <!-- <div class="w-full py-4">
-        <button
-          id="submit-button"
-          class="bg-surface-dark text-base outline-none capitalize font-mono px-4 py-1 cursor-pointer hover:shadow-sm hover:shadow-primary-dark transition-shadow duration-300 rounded-xs"
-        >
+      <div class="w-full mt-4">
+        <button id="submit-button"
+          class="bg-surface-dark text-base outline-none capitalize font-mono px-4 py-1 cursor-pointer hover:shadow-sm border-2 border-border-dark hover:shadow-primary-dark transition-shadow duration-300 rounded-md">
           Submit
         </button>
-      </div> -->
-      <!-- submit portion  -->
-    </section>
-    <!-- --------------------------------- Input section --------------------------------- -->
-    <!-- --------------------------------- result --------------------------------- -->
-     {% if predicted_disease %}
-    <section id="result" class="lg:px-40 sm:px-20 max-sm:px-10 max-xs:px-4 py-6 mt-10">
-      <div class="w-full flex flex-col gap-4">
-        <h1 class="text-2xl font-semibold font-mono text-center">
-          Result
-        </h1>
       </div>
-      <div id="result-container" class="w-full grid lg:grid-cols-4 sm:grid-cols-3 max-sm:grid-cols-2 max-xs:grid-cols-1 gap-4 py-10">
-        <!-- Disease -->
-        <div class="w-60 border-2 mt-4 border-border-dark h-fit bg-top-surface-dark rounded-md overflow-hidden">
-          <p class="text-base p-2 bg-surface-dark">
-            Predicted Disease
-          </p>
-          <p class="text-base text-text-muted-dark px-2 py-4">
-            {{predicted_disease}}
-          </p>
-        </div>
-        <!-- Disease -->
-          <!-- description -->
-        <div class="w-60 border-2 mt-4 border-border-dark h-fit bg-top-surface-dark rounded-md overflow-hidden">
-          <p class="text-base p-2 bg-surface-dark">
-            Description
-          </p>
-          <p class="text-base text-text-muted-dark px-2 py-4">
-            {{dis_des}}
-          </p>
-        </div>
-        <!-- description -->
-       <!-- Precautions -->
-        <div class="w-60 border-2 mt-4 border-border-dark h-fit bg-top-surface-dark rounded-md overflow-hidden">
-          <p class="text-base p-2 bg-surface-dark">
-            Precautions
-          </p>
-          <ol class="text-base px-2 py-4">
-            {% for i in my_precautions %}
-              <li class="text-text-muted-dark">{{ i }}</li>
-            {% endfor %}
-          </ol>
-        </div>
-        <!-- Precautions -->
-         <!-- medication -->
-        <div class="w-60 border-2 mt-4 border-border-dark h-fit bg-top-surface-dark rounded-md overflow-hidden">
-          <p class="text-base p-2 bg-surface-dark">
-            Medications
-          </p>
-          <ul class="text-base px-2 py-4">
-            {% for i in medications %}
-              <li class="text-text-muted-dark">{{ i }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-        <!-- medication -->
-         <!-- workout -->
-        <div class="w-60 border-2 mt-4 border-border-dark h-fit bg-top-surface-dark rounded-md overflow-hidden">
-          <p class="text-base p-2 bg-surface-dark">
-            Workout
-          </p>
-          <ol class="text-base px-2 py-4">
-            {% for i in workout %}
-                            <li class="text-text-muted-dark">{{ i }}</li>
-            {% endfor %}
-          </ol>
-        </div>
-        <!-- workout -->
-         <!-- Diet -->
-        <div class="w-60 h-fit border-2 mt-4 border-border-dark bg-top-surface-dark rounded-md overflow-hidden">
-          <p class="text-base p-2 bg-surface-dark">
-            Diet
-          </p>
-          <ul class="text-base px-2 py-4">
-            {% for i in my_diet %}
-                <li class="text-text-muted-dark">{{ i }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-        <!-- Diet -->
+    </form>
+    <!-- submit portion  -->
+  </section>
+  <!-- --------------------------------- Input section --------------------------------- -->
+  <!-- --------------------------------- result --------------------------------- -->
+  {% if predicted_disease %}
+  <section id="result" class="lg:px-40 sm:px-20 max-sm:px-10 max-xs:px-4 py-6 mt-10">
+    <div class="w-full flex flex-col gap-4">
+      <h1 class="text-2xl font-semibold font-mono text-center">Result</h1>
+    </div>
+    <div id="result-container"
+      class="w-full grid lg:grid-cols-4 sm:grid-cols-3 max-sm:grid-cols-2 max-xs:grid-cols-1 gap-4 py-10">
+      <!-- Disease -->
+      <div class="w-60 border-2 mt-4 border-border-dark h-fit bg-top-surface-dark rounded-md overflow-hidden">
+        <p class="text-base p-2 bg-surface-dark">Predicted Disease</p>
+        <p class="text-base text-text-muted-dark px-2 py-4">
+          {{predicted_disease}}
+        </p>
       </div>
-    </section>
-    {% endif %}
-    <!-- --------------------------------- result --------------------------------- -->
+      <!-- Disease -->
+      <!-- description -->
+      <div class="w-60 border-2 mt-4 border-border-dark h-fit bg-top-surface-dark rounded-md overflow-hidden">
+        <p class="text-base p-2 bg-surface-dark">Description</p>
+        <p class="text-base text-text-muted-dark px-2 py-4">{{dis_des}}</p>
+      </div>
+      <!-- description -->
+      <!-- Precautions -->
+      <div class="w-60 border-2 mt-4 border-border-dark h-fit bg-top-surface-dark rounded-md overflow-hidden">
+        <p class="text-base p-2 bg-surface-dark">Precautions</p>
+        <ol class="text-base px-6 py-4">
+          {% for i in my_precautions %}
+          <li class="text-text-muted-dark list-decimal">{{ i }}</li>
+          {% endfor %}
+        </ol>
+      </div>
+      <!-- Precautions -->
+      <!-- medication -->
+      <div class="w-60 border-2 mt-4 border-border-dark h-fit bg-top-surface-dark rounded-md overflow-hidden">
+        <p class="text-base p-2 bg-surface-dark">Medications</p>
+        <ul class="text-base px-6 py-4">
+          {% for i in medications %}
+          <li class="text-text-muted-dark list-disc">{{ i }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <!-- medication -->
+      <!-- workout -->
+      <div class="w-60 border-2 mt-4 border-border-dark h-fit bg-top-surface-dark rounded-md overflow-hidden">
+        <p class="text-base p-2 bg-surface-dark">Workout</p>
+        <ol class="text-base px-6 py-4">
+          {% for i in workout %}
+          <li class="text-text-muted-dark list-decimal">{{ i }}</li>
+          {% endfor %}
+        </ol>
+      </div>
+      <!-- workout -->
+      <!-- Diet -->
+      <div class="w-60 h-fit border-2 mt-4 border-border-dark bg-top-surface-dark rounded-md overflow-hidden">
+        <p class="text-base p-2 bg-surface-dark">Diet</p>
+        <ul class="text-base px-6 py-4">
+          {% for i in my_diet %}
+          <li class="text-text-muted-dark list-disc">{{ i }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <!-- Diet -->
+    </div>
+  </section>
+  {% endif %}
+  <!-- --------------------------------- result --------------------------------- -->
 
+  <!-- --------------------------------- Main --------------------------------- -->
+  <footer class="w-full mt-10 text-sm text-center py-6">
+    Made with ❤️ by DotHP
+  </footer>
 
-    <!-- --------------------------------- Main --------------------------------- -->
-     <footer class="w-full text-center mt-10 text-sm py-6 fixed top-full left-0">
-      Made with ❤️ by DotHP
-    </footer>
+  <script src="../static/javascript/script.js"></script>
+</body>
 
-    <script src="../static/javascript/script.js"></script>
-  </body>
 </html>
