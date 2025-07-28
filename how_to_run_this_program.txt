@@ -1,0 +1,3 @@
+1. open the terminal on current directory.
+2. activate the virtual environment by ".venv\Scripts\activate" cmd.
+3. run the main file by "python main.py" cmd
